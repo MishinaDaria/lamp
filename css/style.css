@@ -1,0 +1,31 @@
+body {
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.body {
+    position: relative;
+}
+
+.lamps {
+    display: block;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.light {
+    position: absolute;
+    top: -264px;
+    left: -43px;
+    max-width: 100%;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+    opacity: 0;
+}
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
+    opacity: 1;
+}
+}
